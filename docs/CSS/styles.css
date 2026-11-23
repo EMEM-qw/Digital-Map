@@ -57,7 +57,8 @@ a {
 }
 
 .top-bar a:hover {
-  background-color: #444;
+  background-color: #1e1e1e;
+  transition-duration: 0.4s;
 }
 .AB1{
   text-align: center;
