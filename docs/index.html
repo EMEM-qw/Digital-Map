@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Campus Way</title>
     <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
+    <script src="JS/navigation.js" defer></script>
 </head>
 <body>
     <section class ="header">
         <nav>
             <div class="nav-links" id="navLinks">
-               <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <button class="menu-close" type="button" aria-label="Close navigation">
+                    <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                </button>
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="About_Us.html">About</a></li>
@@ -18,25 +22,17 @@
                 </ul>
                 <a class="map-button" href="Interactive_Map.html">Interactive Map</a>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <button class="menu-open" type="button" aria-label="Open navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
         </nav>
     </section>
 <div class="content">
         <h1>CAMPUSWAY</h1>
         <p>Welcome to Campus Way! We are dedicated to providing the best campus experience for all students.<br> Moreover, we want each individuals to integrate their ownselves into the campus even more as their second home.</p>
-        <a href="" class="link">Visit us now to know more!</a>
+        <a href="About_Us.html" class="link">Visit us now to know more!</a>
 </div>
 
-
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
     </body>
 </html>
 
