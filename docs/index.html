@@ -1,46 +1,42 @@
+<!DOCTYPE html>
 <html>
-    <!DOCTYPE html>
 <head>
     <title>Campus Way</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
 </head>
 <body>
-<div class="top-bar">
-  <a href="index.html" class="active">Home</a>
-  <a href="About_Us.html">About</a>
-  <a href="Facilities.html">Facilities</a>
-  <a href="Help.html">Help</a>
-  <a href="Interactive_Map.html">Map</a>
+    <section class ="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+               <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="About_Us.html">About</a></li>
+                    <li><a href="Methodology.html">Methodology</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul>
+                <a class="map-button" href="Interactive_Map.html">Interactive Map</a>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+<div class="content">
+        <h1>CAMPUSWAY</h1>
+        <p>Welcome to Campus Way! We are dedicated to providing the best campus experience for all students.<br> Moreover, we want each individuals to integrate their ownselves into the campus even more as their second home.</p>
+        <a href="" class="link">Visit us now to know more!</a>
 </div>
-    <header>
-        <h1>Home</h1>
-    <h1>Welcome To CampusWay</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>Campus Way</h2>
-            <h3>Project Capstone Under Development</h3>
-        </section>
 
-        <section>
-            <h2>Construction Development</h2>
-            <ul>
-                <li>Home Page</li>
-                <li>About Page</li>
-                <li>Facilities Page</li>
-                <li>Help Page</li>
-                <li>Interactive Map</li>
-            </ul>
-        </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    </body>
+</html>
 
-        <section>
-            <h2>Resources</h2>
-            <h3>Check out our library of resources to help you succeed academically and socially on campus.</h3>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Campus Way. All rights reserved.</p>
-    </footer>
-    </html>
