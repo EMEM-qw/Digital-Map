@@ -56,7 +56,6 @@ nav img {
   text-decoration: none;
   position: relative;
   font-size: 1.1em;
-  text-decoration: none;
   margin-left: 40px;
 }
  
@@ -89,7 +88,6 @@ nav img {
  height: 55px;
  background: transparent;
  Border: 2px solid #fff;
- outline: none;
  border-radius: 6px;
  cursor: pointer;
  font-size: 1.1em;
@@ -103,6 +101,11 @@ nav img {
 .nav-links a.map-button.active {
   background-color: #fff;
   color: #162938;
+}
+
+.nav-links a.map-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 .content{
@@ -121,7 +124,7 @@ nav img {
 .content p{
   margin: 10px 0 40px;
   font-size: 14px;
-  color; #fff;
+  color: #fff;
 }
 
 .link{
@@ -142,10 +145,11 @@ nav img {
   transition: 1s;
 }
 
-nav > .fa-solid,
-.nav-links > .fa-solid {
+.menu-open,
+.menu-close {
   display: none;
 }
+
 @media (max-width: 700px) {
   .content h1 {
     font-size: 20px;
@@ -167,6 +171,10 @@ nav > .fa-solid,
     gap: 0;
   }
 
+  .nav-links.is-open {
+    right: 0;
+  }
+
   .nav-links ul li {
     display: block;
   }
@@ -180,20 +188,22 @@ nav > .fa-solid,
     margin-left: 0;
   }
 
-  nav > .fa-bars,
-  .nav-links > .fa-circle-xmark {
+  .menu-open,
+  .menu-close {
     display: block;
+    border: 0;
+    background: transparent;
     color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
   }
 
-  .nav-links > .fa-circle-xmark {
+  .menu-close {
     align-self: flex-end;
   }
 
-  nav > .fa-bars {
+  .menu-open {
     margin-left: auto;
   }
 
