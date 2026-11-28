@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Campus Way - Facilities Directory</title>
         <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
+        <script src="JS/navigation.js" defer></script>
     </head>
     <body>
     <section class ="header">
         <nav>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <button class="menu-close" type="button" aria-label="Close navigation">
+                    <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                </button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About_Us.html">About</a></li>
@@ -16,6 +22,9 @@
                 </ul>
                 <a class="map-button" href="Interactive_Map.html">Interactive Map</a>
             </div>
+            <button class="menu-open" type="button" aria-label="Open navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
         </nav>
    </section>
     </body> 
